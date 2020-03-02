@@ -7,21 +7,12 @@ namespace CatWebApp
 {
     public static class Utility
     {
-        public static int Clamp(int value, int min = 0, int max = 100)
-        {
-            return Math.Clamp(value, min, max);
-        }
+        private static Random _random = new Random();
 
-        public static int RandomStartValue()
-        {
-            Random rand = new Random();
-            return rand.Next(80, 100);
-        }
+        public static int Clamp(int value, int min = 0, int max = 100) => Math.Clamp(value, min, max);
 
-        public static int RandomValue(int min, int max)
-        {
-            Random rand = new Random();
-            return rand.Next(min, max);
-        }
+        public static int RandomStartValue() => _random.Next(60, 80);
+
+        public static int RandomNumberBetween(int min, int max) => _random.Next(min, max + 1);
     }
 }

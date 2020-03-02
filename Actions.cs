@@ -11,9 +11,6 @@ namespace CatWebApp
     public enum CleanAction { None, Shower = 15, Brush = 7 }
     public enum SleepAction { None, Nap = 6, Full = 13 }
 
-    public enum ActionLock { None, Hunger, Health, PlayTime, Clean, Sleep}
+    public enum Action { None, Hunger, Health, PlayTime, Clean, Sleep }
 
-    public class Actions
-    {
-    }
 }

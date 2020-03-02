@@ -20,50 +20,44 @@ namespace CatWebApp.Controllers
             return _cat;
         }
 
-        ActionLock actionLocked = new ActionLock();
-
         [HttpPost]
         [Route("hunger")]
-        public void ChangeHunger(HungerAction action)
+        public Cat ChangeHunger(HungerAction action)
         {
-            var available = true;
-            if (!available)
-            {
-                return;
-            }
-            else
-            {
-                _cat.Hunger += (int)action;
-                available = false;
-            }
+            _cat.ApplyAction(action);
+            return _cat;
         }
 
         [HttpPost]
         [Route("health")]
-        public void ChangeHealth(HealthAction action)
+        public Cat ChangeHealth(HealthAction action)
         {
-            _cat.Health += (int)action;
+            _cat.ApplyAction(action);
+            return _cat;
         }
 
         [HttpPost]
         [Route("playtime")]
-        public void ChangePlayTime(PlayTimeAction action)
+        public Cat ChangePlayTime(PlayTimeAction action)
         {
-            _cat.PlayTime += (int)action;
+            _cat.ApplyAction(action);
+            return _cat;
         }
 
         [HttpPost]
         [Route("clean")]
-        public void ChangeClean(CleanAction action)
+        public Cat ChangeClean(CleanAction action)
         {
-            _cat.Clean += (int)action;
+            _cat.ApplyAction(action);
+            return _cat;
         }
 
         [HttpPost]
         [Route("sleep")]
-        public void ChangeSleep(SleepAction action)
+        public Cat ChangeSleep(SleepAction action)
         {
-            _cat.Sleep += (int)action;
+            _cat.ApplyAction(action);
+            return _cat;
         }
     }
 }
