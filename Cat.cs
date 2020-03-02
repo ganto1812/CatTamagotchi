@@ -8,16 +8,11 @@ namespace CatWebApp
         public Cat(string name)
         {
             Name = name;
-            Hunger = RandomStartValue();
-            Health = RandomStartValue();
-            PlayTime = RandomStartValue();
-            Clean = RandomStartValue();
-            Sleep = RandomStartValue();
-        }
-
-        public static int Clamp(int value, int min = 0, int max = 100)
-        {
-            return Math.Clamp(value, min, max);
+            Hunger = Utility.RandomStartValue();
+            Health = Utility.RandomStartValue();
+            PlayTime = Utility.RandomStartValue();
+            Clean = Utility.RandomStartValue();
+            Sleep = Utility.RandomStartValue();
         }
 
         public string Name { get; set; }
@@ -26,43 +21,35 @@ namespace CatWebApp
         public int Hunger
         {
             get => _hunger;
-            set => _hunger = Clamp(value);
+            set => _hunger = Utility.Clamp(value);
         }
 
         private int _health;
         public int Health
         {
             get => _health;
-            set => _health = Clamp(value);
+            set => _health = Utility.Clamp(value);
         }
 
         private int _playTime;
         public int PlayTime
         {
             get => _playTime;
-            set => _playTime = Clamp(value);
+            set => _playTime = Utility.Clamp(value);
         }
 
         private int _clean;
         public int Clean
         {
             get => _clean;
-            set => _clean = Clamp(value);
+            set => _clean = Utility.Clamp(value);
         }
 
         private int _sleep;
         public int Sleep
         {
             get => _sleep;
-            set => _sleep = Clamp(value);
-        }
-
-
-        private int RandomStartValue()
-        {
-            // TODO: have rand be static too, and live in the class
-            Random rand = new Random();
-            return (rand.Next(80, 100));
+            set => _sleep = Utility.Clamp(value);
         }
     }
 }
