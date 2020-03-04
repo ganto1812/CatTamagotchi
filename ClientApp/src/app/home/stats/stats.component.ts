@@ -12,10 +12,13 @@ export class StatsComponent implements OnInit {
 
   constructor(private catDataService: CatDataService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.showCatData();
+  }
 
-  data = function showData() {
-    this.catDataService.getData().subscribe(
+  showCatData() {
+    let data = this.catDataService.getData();
+    data.subscribe(
       (data: CatData) =>
         (this.catData = {
           name: data["name"],
@@ -27,5 +30,5 @@ export class StatsComponent implements OnInit {
           lastAction: data["lastAction"]
         })
     );
-  };
+  }
 }

@@ -1,10 +1,8 @@
-<h2>Stats</h2>
+﻿<h2>Stats</h2>
 <div class="row mx-auto justify-content-around">
-  <app-stat></app-stat>
-  <app-stat></app-stat>
-  <app-stat></app-stat>
-  <app-stat></app-stat>
-  <app-stat></app-stat>
-  <h3>My data</h3>
-  <p>{{ catData }}</p>
+  <app-stat icon="❤" name="Hunger"[value]="catData.hunger"></app-stat>
+  <app-stat icon="🍽" name="Health"[value]="catData.health"></app-stat>
+  <app-stat icon="🕹" name="PlayTime"[value]="catData.playTime"></app-stat>
+  <app-stat icon="🚿" name="Clean"[value]="catData.clean"></app-stat>
+  <app-stat icon="💤" name="Sleep"[value]="catData.sleep"></app-stat>
 </div>
