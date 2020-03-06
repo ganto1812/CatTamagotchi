@@ -1,13 +1,16 @@
-<div class="p-2 m-2">
-  <h2>{{icon}}{{name}}</h2>
+<div class="p-2 m-2 text-center">
+  <h2>{{ icon }}</h2>
+  <h2>{{ name }}</h2>
   <div class="progress">
-    <div class="progress-bar bg-success"
-         role="progressbar"
-         style="width: 90%;"
-         aria-valuenow="70"
-         aria-valuemin="0"
-         aria-valuemax="100">
-      {{value}}%
+    <div
+      class="progress-bar bg-success"
+      role="progressbar"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      [style.width.%]="value"
+      [attr.aria-valuenow]="value"
+    >
+      {{ value }}%
     </div>
   </div>
 </div>

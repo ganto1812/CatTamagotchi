@@ -1,11 +1,15 @@
-<h3>Health</h3>
-<form class="game-options">
-  <div class="form-group">
-    <div class="btn-group btn-group-toggle flex-column" data-toggle="buttons">
-      <app-option></app-option>
-      <app-option></app-option>
-      <app-option></app-option>
+<div class="my-2">
+  <h3 class="text-center">{{ option.name }}</h3>
+  <form class="game-options">
+    <div
+      class="form-group btn-group btn-group-toggle d-block m-0"
+      data-toggle="buttons"
+    >
+      <div *ngFor="let action of option.actions">
+        <app-option [action]="action"></app-option>
+      </div>
     </div>
-  </div>
-  <button type="submit" class="btn btn-success btn-lg">Select</button>
-</form>
+    <button type="submit" class="btn btn-success btn-lg">Select</button>
+    <span>Last Action: {{ catData.lastAction }}</span>
+  </form>
+</div>

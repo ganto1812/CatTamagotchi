@@ -1,5 +1,4 @@
-import { Component, OnInit } from "@angular/core";
-import { CatData, CatDataService } from "./../../cat-data.service";
+import { Component, OnInit, Input } from "@angular/core";
 
 @Component({
   selector: "app-stats",
@@ -7,28 +6,9 @@ import { CatData, CatDataService } from "./../../cat-data.service";
   styleUrls: ["./stats.component.css"]
 })
 export class StatsComponent implements OnInit {
-  error: any;
-  catData: CatData;
+  @Input() catData;
 
-  constructor(private catDataService: CatDataService) {}
+  constructor() {}
 
-  ngOnInit() {
-    this.showCatData();
-  }
-
-  showCatData() {
-    let data = this.catDataService.getData();
-    data.subscribe(
-      (data: CatData) =>
-        (this.catData = {
-          name: data["name"],
-          hunger: data["hunger"],
-          health: data["health"],
-          playTime: data["playTime"],
-          clean: data["clean"],
-          sleep: data["sleep"],
-          lastAction: data["lastAction"]
-        })
-    );
-  }
+  ngOnInit() {}
 }

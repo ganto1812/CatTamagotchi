@@ -12,8 +12,8 @@ import { FetchDataComponent } from "./fetch-data/fetch-data.component";
 import { StatsComponent } from "./home/stats/stats.component";
 import { StatComponent } from "./home/stats/stat/stat.component";
 import { OptionsComponent } from "./home/options/options.component";
-import { OptionComponent } from "./home/options/action-options/option/option.component";
 import { ActionOptionsComponent } from "./home/options/action-options/action-options.component";
+import { OptionComponent } from "./home/options/action-options/option/option.component";
 import { FooterComponent } from "./footer/footer.component";
 
 @NgModule({
@@ -26,8 +26,8 @@ import { FooterComponent } from "./footer/footer.component";
     StatsComponent,
     StatComponent,
     OptionsComponent,
-    OptionComponent,
     ActionOptionsComponent,
+    OptionComponent,
     FooterComponent
   ],
   imports: [

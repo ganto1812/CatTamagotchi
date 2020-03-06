@@ -1,8 +1,33 @@
-﻿<h2>Stats</h2>
+﻿<h2 class="m-5">Stats</h2>
 <div class="row mx-auto justify-content-around">
-  <app-stat icon="❤" name="Hunger"[value]="catData.hunger"></app-stat>
-  <app-stat icon="🍽" name="Health"[value]="catData.health"></app-stat>
-  <app-stat icon="🕹" name="PlayTime"[value]="catData.playTime"></app-stat>
-  <app-stat icon="🚿" name="Clean"[value]="catData.clean"></app-stat>
-  <app-stat icon="💤" name="Sleep"[value]="catData.sleep"></app-stat>
+  <app-stat
+    icon="❤"
+    name="Hunger"
+    [value]="catData.hunger"
+    class="col-sm"
+  ></app-stat>
+  <app-stat
+    icon="🍽"
+    name="Health"
+    [value]="catData.health"
+    class="col-sm"
+  ></app-stat>
+  <app-stat
+    icon="🕹"
+    name="PlayTime"
+    [value]="catData.playTime"
+    class="col-sm"
+  ></app-stat>
+  <app-stat
+    icon="🚿"
+    name="Clean"
+    [value]="catData.clean"
+    class="col-sm"
+  ></app-stat>
+  <app-stat
+    icon="💤"
+    name="Sleep"
+    [value]="catData.sleep"
+    class="col-sm"
+  ></app-stat>
 </div>
