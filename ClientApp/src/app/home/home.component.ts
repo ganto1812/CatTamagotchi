@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { CatData, CatDataService } from "./../cat-data.service";
+import { threadId } from "worker_threads";
 
 @Component({
   selector: "app-home",
@@ -27,7 +28,8 @@ export class HomeComponent {
           clean: data["clean"],
           sleep: data["sleep"],
           lastAction: data["lastAction"]
-        })
+        }),
+      error => (this.error = error)
     );
   }
 }
