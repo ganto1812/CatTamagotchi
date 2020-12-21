@@ -1,1 +1,35 @@
-/* No CSS *//*# sourceMappingURL=Styles.css.map */
+body {
+  background-color: #2b2b2b;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background-color: #0490b3;
+  -webkit-box-shadow: 0 1px 6px 0 #575757;
+          box-shadow: 0 1px 6px 0 #575757;
+}
+
+.navbar a:hover {
+  background-color: #005368;
+}
+
+.navbar .active {
+  background-color: #7e1946;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+  height: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #005267;
+  -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #0d1110, #0d1110 1px, #141d1b 0, #141d1b);
+}
+/*# sourceMappingURL=Styles.css.map */

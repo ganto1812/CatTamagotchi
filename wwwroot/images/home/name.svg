@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="173.53885mm"
+   height="131.11179mm"
+   viewBox="0 0 173.53885 131.11179"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="name.svg">
+  <defs
+     id="defs2">
+    <rect
+       x="33.261906"
+       y="69.547623"
+       width="108.34104"
+       height="77.933907"
+       id="rect12" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="340.50681"
+     inkscape:cy="351.24322"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1512"
+     inkscape:window-height="1040"
+     inkscape:window-x="156"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-26.152876,-21.903975)">
+    <path
+       style="fill:#005267;fill-opacity:1;stroke:none;stroke-width:0.370757px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 180.7443,75.858729 C 182.57568,62.613467 207.79326,48.037366 197.02747,38.300811 156.53733,1.6816599 34.87393,31.035324 26.461414,80.682692 c -5.172882,30.528328 55.915181,45.691118 91.999816,49.962378 23.29794,2.7577 54.68766,-0.57002 67.57511,-17.22841 8.16007,-10.54778 -7.0235,-25.035364 -5.29204,-37.557931 z"
+       id="path24-6"
+       sodipodi:nodetypes="aaaaaa" />
+    <path
+       style="fill:#0088aa;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 140.58377,109.84777 C 141.78617,99.573876 158.34289,88.267704 151.27456,80.715396 124.69058,52.311193 44.811896,75.07981 39.288619,113.58955 c -3.39628,23.67976 36.711369,35.44102 60.402914,38.75408 15.296367,2.13906 35.905437,-0.44214 44.366747,-13.36348 5.35753,-8.18154 -4.61131,-19.41906 -3.47451,-29.13238 z"
+       id="path24"
+       sodipodi:nodetypes="aaaaaa" />
+    <text
+       xml:space="preserve"
+       id="text10"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4px;line-height:1.25;font-family:'Segoe Script';-inkscape-font-specification:'Segoe Script';white-space:pre;shape-inside:url(#rect12);fill:#ffffff;fill-opacity:1;stroke:none;"
+       transform="matrix(1.4190924,0,0,1.4190924,-14.043688,-38.825529)"><tspan
+         x="33.261719"
+         y="91.910191"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Segoe Script';-inkscape-font-specification:'Segoe Script';fill:#ffffff;fill-opacity:1">Ana
+</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:37.3074px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.388618"
+       x="53.075432"
+       y="120.51602"
+       id="text22"><tspan
+         sodipodi:role="line"
+         id="tspan20"
+         x="53.075432"
+         y="120.51602"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3074px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';fill:#ffffff;fill-opacity:1;stroke-width:0.388618">Pisani</tspan></text>
+  </g>
+</svg>

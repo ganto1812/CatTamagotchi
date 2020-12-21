@@ -12,4 +12,31 @@ export class ActionOptionsComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  action(action) {
+    switch (action) {
+      case 'food':
+        
+        break;
+    
+      case 'health':
+        
+        break;
+    
+      case 'play':
+        
+        break;
+    
+      case 'shower':
+        
+        break;
+    
+      case 'sleep':
+        
+        break;
+    
+      default:
+        break;
+    }
+  }
 }

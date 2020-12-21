@@ -1,0 +1,20 @@
+<div class="p-5">
+  <h1>Vanilla JS Projects</h1>
+  <p>First projects I worked on when I first started (2018)</p>
+</div>
+<div>
+  <section class="cards-list d-flex py-5">
+    <article *ngFor="let project of projects" class="card">
+      <a [href]="project.link">
+        <img
+          [src]="'images/vanilla/' + project.src"
+          class="img-fluid mx-auto"
+          [alt]="project.name"
+        />
+      </a>
+      <p>
+        <em>{{ project.name }}</em>
+      </p>
+    </article>
+  </section>
+</div>

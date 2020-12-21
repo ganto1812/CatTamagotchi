@@ -1,0 +1,38 @@
+#contactme {
+  margin-bottom: 10em;
+}
+
+.card-list {
+  display: flex;
+  padding: 3rem;
+}
+
+
+
+.card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 28em;
+  width: 400px;
+  min-width: 250px;
+  padding: 1.5rem;
+
+  border-radius: 16px;
+  background: #005267;
+  box-shadow: -1rem 0 3rem #000;
+
+  transition: .2s;
+}
+
+.card:hover {
+  transform: translateY(-2rem);
+}
+
+.card:hover~.card {
+  transform: translateX(130px);
+}
+
+.card:not(:first-child) {
+  margin-left: -160px;
+}

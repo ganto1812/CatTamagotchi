@@ -5,29 +5,34 @@
     name="Hunger"
     [value]="catData.hunger"
     class="col-sm"
+    (click)="action('food')"
   ></app-stat>
   <app-stat
     icon="🍽"
     name="Health"
     [value]="catData.health"
     class="col-sm"
+    (click)="action('health')"
   ></app-stat>
   <app-stat
     icon="🕹"
     name="PlayTime"
     [value]="catData.playTime"
     class="col-sm"
+    (click)="action('play')"
   ></app-stat>
   <app-stat
     icon="🚿"
     name="Clean"
     [value]="catData.clean"
     class="col-sm"
+    (click)="action('shower')"
   ></app-stat>
   <app-stat
     icon="💤"
     name="Sleep"
     [value]="catData.sleep"
     class="col-sm"
+    (click)="action('sleep')"
   ></app-stat>
 </div>

@@ -1,0 +1,19 @@
+<h1>React Projects</h1>
+<p>2019</p>
+<div>
+    <section class="cards-list d-flex p-5">
+      <article *ngFor="let project of projects" class="card">
+        <a [href]="project.link">
+          <img
+            [src]="'images/react/' + project.src"
+            class="img-fluid mx-auto"
+            [alt]="project.name"
+          />
+        </a>
+        <p>
+          <em>{{ project.name }}</em>
+        </p>
+      </article>
+    </section>
+  </div>
+  

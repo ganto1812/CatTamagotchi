@@ -1,19 +1,82 @@
-<h1>Chunky</h1>
-<p>This is your chunky cat: Chunky</p>
-<img
-  src="assets/images/chunky.jpg"
-  class="img-fluid d-flex mx-auto"
-  alt="chunky"
-/>
-<div class="mx-auto d-block">
-  <app-stats [catData]="catData"></app-stats>
-  <app-options [catData]="catData"></app-options>
+<div class="container">
+  <header class="section header" id="home">
+    <!-- Big Ana Pisani and Logo -->
+    <div class="position-relative mb-5">
+      <img
+        src="images/home/name.svg"
+        alt="Ana Pisani"
+        class="name img-fluid px-5 pt-5 mt-5 mx-auto"
+      />
+      <img
+        src="images/home/me.svg"
+        id="avatar"
+        alt="Picture of myself"
+        title="Ana Pisani"
+        class="img-fluid mx-auto mt-5 px-5 position-absolute"
+      />
+    </div>
+  </header>
+  <!--intro -->
+  <div class="intro">
+    <h1 class="underline">ABOUT ME</h1>
+    <div class="intro">
+      <div class="mb-5">
+        <p>
+          I'm a self-taught Front End Developer, currently working to become a
+          Full Stack Developer.
+        </p>
+      </div>
+      <div>
+        <h2>Some of the languages I use today include:</h2>
+        <div class="p-5 col-8 mx-auto">
+          <div class="smallIcons d-flex flex-row flex-wrap">
+            <img
+              *ngFor="let lang of home.langs"
+              [src]="'images/home/' + lang"
+              alt="html"
+              class="mx-auto img-fluid p-2 col-4 col-md-2"
+              title="HTML"
+            />
+          </div>
+        </div>
+        <h2>Libraries &amp; Frameworks:</h2>
+        <div class="p-5 col-8 mx-auto">
+          <div class="smallIcons row">
+            <img
+              *ngFor="let lib of home.libs"
+              [src]="'images/home/' + lib"
+              [alt]="lib"
+              class="mx-auto img-fluid p-2 col-4 col-md-2"
+              [title]="lib"
+            />
+          </div>
+        </div>
+        <h2>Designing software:</h2>
+        <div class="p-5 col-8 mx-auto">
+          <div class="smallIcons row">
+            <img
+              *ngFor="let design of home.designs"
+              [src]="'images/home/' + design"
+              [alt]="design"
+              class="mx-auto img-fluid p-2 col-4 col-md-2"
+              [title]="design"
+            />
+          </div>
+        </div>
+        <h2>Others:</h2>
+        <div class="p-5 col-8 mx-auto">
+          <div class="smallIcons row">
+            <img
+              *ngFor="let other of home.others"
+              [src]="'images/home/' + other"
+              [alt]="other"
+              class="mx-auto img-fluid p-2 col-6 col-md-2"
+              [title]="other"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
 </div>
-<p class="m-5 p-5">
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam tenetur
-  veritatis praesentium dignissimos dolore, at amet. Neque tenetur, illum hic
-  voluptates consectetur reiciendis illo sequi obcaecati aliquam. Sed, quos
-  odio, cum enim error praesentium voluptatum rem vero temporibus sit beatae
-  numquam labore dicta nam. Suscipit magni ab ut ex officiis.
-</p>
-<app-footer></app-footer>

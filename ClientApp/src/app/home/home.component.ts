@@ -1,33 +1,20 @@
 import { Component } from "@angular/core";
-import { CatData, CatDataService } from "./../cat-data.service";
 
 @Component({
   selector: "app-home",
-  templateUrl: "./home.component.html"
+  templateUrl: "./home.component.html",
+  styleUrls: ["./home.component.css"]
 })
 export class HomeComponent {
-  error: any;
-  catData: CatData;
-
-  constructor(private catDataService: CatDataService) {}
+  home = {
+    langs:["html.png", "css.png", "js.png", "cSharp.png"],
+    libs:["net.png", "jquery.png", "reactjs.png", "angular.png", "bootstrap.png", "sass.png"],
+    designs:["photoshop.svg", "illustrator.jpg", "adobe-xd.svg", "gimp.png", "inkscape.png"],
+    others: ["github.png", "slack.png", "icescrum.png", "figma.png"]
+  }
+  constructor() {}
 
   ngOnInit() {
-    this.showCatData();
   }
 
-  showCatData() {
-    let data = this.catDataService.getData();
-    data.subscribe(
-      (data: CatData) =>
-        (this.catData = {
-          name: data["name"],
-          hunger: data["hunger"],
-          health: data["health"],
-          playTime: data["playTime"],
-          clean: data["clean"],
-          sleep: data["sleep"],
-          lastAction: data["lastAction"]
-        })
-    );
-  }
 }

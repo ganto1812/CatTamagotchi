@@ -9,7 +9,9 @@
         <app-option [action]="action"></app-option>
       </div>
     </div>
-    <button type="submit" class="btn btn-success btn-lg">Select</button>
+    <button type="submit" class="btn btn-success btn-lg" (click)="action('food')">
+      Select
+    </button>
     <span>Last Action: {{ catData.lastAction }}</span>
   </form>
 </div>

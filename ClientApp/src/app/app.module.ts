@@ -7,13 +7,14 @@ import { RouterModule } from "@angular/router";
 import { AppComponent } from "./app.component";
 import { NavMenuComponent } from "./nav-menu/nav-menu.component";
 import { HomeComponent } from "./home/home.component";
-import { CounterComponent } from "./counter/counter.component";
-import { FetchDataComponent } from "./fetch-data/fetch-data.component";
-import { StatsComponent } from "./home/stats/stats.component";
-import { StatComponent } from "./home/stats/stat/stat.component";
-import { OptionsComponent } from "./home/options/options.component";
-import { ActionOptionsComponent } from "./home/options/action-options/action-options.component";
-import { OptionComponent } from "./home/options/action-options/option/option.component";
+import { VanillaJSComponent } from "./vanillaJS/vanillaJS.component";
+import { ReactComponent } from "./react/react.component";
+import { AngularComponent } from "./angular/angular.component";
+import { StatsComponent } from "./angular/stats/stats.component";
+import { StatComponent } from "./angular/stats/stat/stat.component";
+import { OptionsComponent } from "./angular/options/options.component";
+import { ActionOptionsComponent } from "./angular/options/action-options/action-options.component";
+import { OptionComponent } from "./angular/options/action-options/option/option.component";
 import { FooterComponent } from "./footer/footer.component";
 
 @NgModule({
@@ -21,8 +22,9 @@ import { FooterComponent } from "./footer/footer.component";
     AppComponent,
     NavMenuComponent,
     HomeComponent,
-    CounterComponent,
-    FetchDataComponent,
+    VanillaJSComponent,
+    ReactComponent,
+    AngularComponent,
     StatsComponent,
     StatComponent,
     OptionsComponent,
@@ -36,8 +38,9 @@ import { FooterComponent } from "./footer/footer.component";
     FormsModule,
     RouterModule.forRoot([
       { path: "", component: HomeComponent, pathMatch: "full" },
-      { path: "counter", component: CounterComponent },
-      { path: "fetch-data", component: FetchDataComponent }
+      { path: "vanillaJS", component: VanillaJSComponent },
+      { path: "react", component: ReactComponent },
+      { path: "angular", component: AngularComponent }
     ])
   ],
   providers: [],

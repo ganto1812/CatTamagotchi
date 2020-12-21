@@ -11,4 +11,9 @@ export class StatsComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  action(action) {
+    console.log(action);
+  }
+  
 }
